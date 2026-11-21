@@ -4,7 +4,7 @@ def kalkulator():
     a = float(input("Podaj pierwszą liczbę: "))
     b = float(input("Podaj drugą liczbę: "))
 
-    operacja = input("Wybierz działanie (+, -, *, /): ")
+    operacja = input("Wybierz działanie (+, -, *, /, ^): ")
 
     if operacja == "+":
         wynik = a + b
@@ -12,6 +12,8 @@ def kalkulator():
         wynik = a - b
     elif operacja == "*":
         wynik = a * b
+    elif operacja == "^":
+        wynik = a ** b    
     elif operacja == "/":
         if b == 0:
             print("Nie można dzielić przez zero.")
